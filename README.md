@@ -1,19 +1,19 @@
-# ☁️ Azure - Infraestrutura Contoso Web
+# ☁️ Azure - Infraestrutura Web
 
 Este projeto descreve a criação de maquinas virtuais para a implantação de uma aplicação web na nuvem Azure, com foco em **alta disponibilidade**, **escalabilidade** e **segurança**.
 
 ## 📋 Requisitos
 
-- Alta disponibilidade (Availability Zones)
-- Escalabilidade horizontal (VMSS)
-- Armazenamento otimizado (SSD Premium)
-- Segurança (WAF, RBAC, Policy)
+- Alta disponibilidade
+- Escalabilidade
+- Armazenamento otimizado
+- Segurança
 - Documentação clara e estruturada
 
 ## 🔧 Recursos Criados
 
-- Grupo de Recursos: `rg-webApplication-prd`
-- Rede Virtual: `vnet-webApplication-prd`
+- Grupo de Recursos: `rg-webApplication-prod`
+- Rede Virtual: `vnet-webApplication-prod`
 - Subnet: `subnet-web`, `subnet-agw`
 - 3 VMs em zonas diferentes (Ubuntu)
 - Application Gateway com WAF (modo preventivo)
@@ -31,13 +31,11 @@ Este projeto descreve a criação de maquinas virtuais para a implantação de u
 
 ## Visão Geral
 
-![Arquitetura Azure](../images/architecture-diagram.png)
-
 A arquitetura foi projetada para atender aos requisitos de alta disponibilidade, escalabilidade e segurança, usando os seguintes componentes principais:
 
 | Componente | Função |
 |-----------|--------|
-| Grupo de Recursos | Agrupa todos os recursos sob `rg-varejoonline-prod` |
+| Grupo de Recursos | Agrupa todos os recursos sob `rg-webApplication-prod` |
 | Rede Virtual | Conecta todas as máquinas e serviços internos |
 | VMs Ubuntu | Hospedam a aplicação web |
 | Application Gateway | Balanceador de carga com WAF |
@@ -47,12 +45,6 @@ A arquitetura foi projetada para atender aos requisitos de alta disponibilidade,
 ## 📈 Escalonamento
 
 O Azure VMSS aumenta ou reduz a quantidade de VMs com base no uso de CPU (>= 70%).
-
-## 🛡 Segurança
-
-- IPs públicos desativados
-- Application Gateway com WAF
-- RBAC e Policies aplicadas
 
 ## Como Implementar
 
