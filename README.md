@@ -29,6 +29,21 @@ Este projeto descreve a criação de maquinas virtuais para a implantação de u
 - Availability Zones
 - VM Scale Sets
 
+## Visão Geral
+
+![Arquitetura Azure](../images/architecture-diagram.png)
+
+A arquitetura foi projetada para atender aos requisitos de alta disponibilidade, escalabilidade e segurança, usando os seguintes componentes principais:
+
+| Componente | Função |
+|-----------|--------|
+| Grupo de Recursos | Agrupa todos os recursos sob `rg-varejoonline-prod` |
+| Rede Virtual | Conecta todas as máquinas e serviços internos |
+| VMs Ubuntu | Hospedam a aplicação web |
+| Application Gateway | Balanceador de carga com WAF |
+| VMSS | Escala automática das VMs |
+| Availability Zones | Garante alta disponibilidade |
+
 ## 📈 Escalonamento
 
 O Azure VMSS aumenta ou reduz a quantidade de VMs com base no uso de CPU (>= 70%).
