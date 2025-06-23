@@ -57,6 +57,24 @@ Este projeto está no GitHub:
 gh repo clone tdlima/project-webApplication-az104-dio
 ```
 
+## 📁 Estrutura do Repositório
+
+```bash
+azure-cloud-architecture/
+│
+├── README.md                     ← Descrição geral do projeto
+├── docs/
+│   ├── tutorial.md               ← Passo a passo completo da implantação
+│   ├── architecture.md           ← Detalhes da arquitetura
+│   └── best-practices.md         ← Boas práticas e dicas extras
+│
+├── images/
+│   └── architecture-diagram.png  ← Diagrama visual da arquitetura (gerado)
+│
+└── scripts/
+    └── deploy.ps1                ← Exemplo de script PowerShell para criação de recursos
+```
+
 ## 📚 Documentação Oficial
 
 - [Máquinas Virtuais no Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/)
