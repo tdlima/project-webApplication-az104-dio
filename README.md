@@ -69,14 +69,10 @@ azure-cloud-architecture/
 ├── README.md                     ← Descrição geral do projeto
 ├── docs/
 │   ├── tutorial.md               ← Passo a passo completo da implantação
-│   ├── architecture.md           ← Detalhes da arquitetura
-│   └── best-practices.md         ← Boas práticas e dicas extras
+│   └── melhores-praticas.md      ← Boas práticas e dicas extras
 │
 ├── images/
-│   └── architecture-diagram.png  ← Diagrama visual da arquitetura (gerado)
-│
-└── scripts/
-    └── deploy.ps1                ← Exemplo de script PowerShell para criação de recursos
+    └── architecture-diagram.png  ← Diagrama visual da arquitetura (gerado)
 ```
 
 ## 📚 Documentação Oficial
