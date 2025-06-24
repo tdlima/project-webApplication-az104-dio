@@ -1,13 +1,17 @@
-# ☁️ Azure - Infraestrutura Web
+# 📘 Resumo do Projeto - Azure ☁️
 
-Este projeto descreve a criação de maquinas virtuais para a implantação de uma aplicação web na nuvem Azure, com foco em **alta disponibilidade**, **escalabilidade** e **segurança**.
+Este projeto visa a implantação de uma arquitetura cloud para hospedar uma aplicação web em ambiente de máquinas virtuais no Microsoft Azure, garantindo **alta disponibilidade**, **escalabilidade** e **segurança**. O cenário baseado no mundo real envolve uma empresa de varejo digital que precisa suportar picos sazonais de tráfego, como campanhas promocionais ou black friday.
+
+## 🔍 Cenário
+
+Uma empresa de e-commerce chamada "VarejoOnline" deseja migrar parte de sua infraestrutura local para o Azure. A necessidade é implantar um ambiente escalável e altamente disponível para rodar uma aplicação web (front-end + back-end) com base em máquinas virtuais Linux Ubuntu 20.04 LTS.
 
 ## 📋 Requisitos
 
-- Alta disponibilidade
-- Escalabilidade
-- Armazenamento otimizado
-- Segurança
+- Suporte a aumento de carga durante eventos sazonais.
+- Garantia de alta disponibilidade (99,95% SLA).
+- Armazenamento eficiente e seguro.
+- Proteção contra ataques web com firewall de aplicações (WAF).
 - Documentação clara e estruturada
 
 ## 🔧 Recursos Criados
@@ -38,7 +42,7 @@ A arquitetura foi projetada para atender aos requisitos de alta disponibilidade,
 | Grupo de Recursos | Agrupa todos os recursos sob `rg-webApplication-prod` |
 | Rede Virtual | Conecta todas as máquinas e serviços internos |
 | VMs Ubuntu | Hospedam a aplicação web |
-| Application Gateway | Balanceador de carga com WAF |
+| Application Gateway | Fornece acesso seguro em conjunto com WAF |
 | VMSS | Escala automática das VMs |
 | Availability Zones | Garante alta disponibilidade |
 
