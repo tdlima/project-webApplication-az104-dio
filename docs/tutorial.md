@@ -119,19 +119,3 @@ Este guia ensina, passo a passo, como criar uma infraestrutura no Microsoft Azur
 4. Configure **escalonamento automático** com base em CPU > 70% por 10 minutos
 
 ---
-
-## 🔐 7. Boas Práticas de Segurança
-
-- Nas VMs, use apenas IPs internos
-- Crie grupos de segurança (NSG) para permitir apenas as portas necessárias (80)
-- Monitore com Azure Monitor e Log Analytics
-- Use Tags:
-  - `env=prod`
-  - `owner=infra`
-  - `project=ecommerce-web`
-
----
-
-> 📌 **Dica final:** Use Azure Resource Locks para proteger os recursos contra exclusão acidental.
-
----
