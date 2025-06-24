@@ -14,13 +14,13 @@
 
 ## Configurações de Segurança (RBAC e Policy)  
 
-### ** RBAC: 
+### *RBAC:
 
    - Crie funções personalizadas para administradores, desenvolvedores e auditores.
    - Exemplo: função “Leitor de Máquinas” com permissão somente de visualização.
      
 
-### ** Policy: 
+### *Policy: 
 
     - Use Azure Policy para impor regras como:
     - Somente discos SSD podem ser criados
