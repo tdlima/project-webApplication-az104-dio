@@ -22,10 +22,10 @@
 
 ### *Policy:*
 
-    - Use Azure Policy para impor regras como:
-    - Somente discos SSD podem ser criados
-    - Nomes de recursos devem seguir padrão (<tipo>-<nome>)
-    - Máquinas só podem estar em Availability Zones
+   - Use Azure Policy para impor regras como:
+   - Somente discos SSD podem ser criados
+   - Nomes de recursos devem seguir padrão (<tipo>-<nome>)
+   - Máquinas só podem estar em Availability Zones
          
 ---     
 
